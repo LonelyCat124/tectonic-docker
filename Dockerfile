@@ -7,6 +7,7 @@ FROM ubuntu
 RUN apt-get update \
      && apt-get install -y --no-install-recommends libfontconfig1 libgraphite2-3 libharfbuzz0b zlib1g libharfbuzz-icu0 libssl1.1 ca-certificates \
      python python-pip python-dev build-essential latexmk libicu60 \
+     && pip install --upgrade setuptools \
      && pip install sphinx \
      && apt-get -y --no-install-recommends install pandoc pandoc-citeproc \
     && rm -rf /var/lib/apt/lists/* 
