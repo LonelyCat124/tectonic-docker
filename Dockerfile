@@ -13,7 +13,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* 
 
 COPY --from=builder /usr/local/cargo/bin/tectonic /usr/bin/
-COPY --from=builder /root/.cache/Tectonic/ /root/.cache/Tectonic/
+#COPY --from=builder /root/.cache/Tectonic/ /root/.cache/Tectonic/
 WORKDIR /usr/src/tex
 
 
