@@ -7,7 +7,7 @@ FROM continuumio/anaconda3
 RUN apt-get update \
      && conda install --upgrade setuptools \
      && conda install sphinx \
-     && conda install -y tectonic
+     && conda install -y tectonic \
      && apt-get -y --no-install-recommends install pandoc pandoc-citeproc \
     && rm -rf /var/lib/apt/lists/* 
 
