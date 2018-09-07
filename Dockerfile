@@ -6,7 +6,7 @@
 FROM continuumio/anaconda3
 RUN apt-get update \
      && conda config --add channels conda-forge \
-     && conda update --all
+     && conda update --all \
      && conda install setuptools \
      && conda install sphinx \
      && conda install -y tectonic \
