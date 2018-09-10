@@ -5,7 +5,7 @@
 
 FROM continuumio/anaconda3
 RUN apt-get update \
-     && apt-get install build-essential \
+     && apt-get -y install build-essential \
      && conda config --add channels conda-forge \
      && conda update --all \
      && conda install setuptools \
